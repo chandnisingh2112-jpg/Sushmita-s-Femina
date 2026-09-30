@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Femina - Luxury Salon and Styling Services. Experience the Apple-design photography-first aesthetic.">
+  <meta name="theme-color" content="#1A0609">
+  <meta name="color-scheme" content="dark light">
+  <title>Femina | Salon & Barber</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&family=Marcellus&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css">
+  <script src="main.js" defer></script>
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BeautySalon",
+    "name": "Femina",
+    "image": "https://example.com/logo.png",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "123 Elegance Ave",
+      "addressLocality": "New York",
+      "addressRegion": "NY",
+      "postalCode": "10001",
+      "addressCountry": "US"
+    },
+    "telephone": "+1234567890"
+  }
+  </script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="navbar" role="banner">
+    <div class="navbar__container">
+      <a href="#" class="navbar__logo" aria-label="Femina Home">Femina</a>
+      
+      <nav aria-label="Main Navigation">
+        <ul class="navbar__menu">
+          <li><a href="#services" class="navbar__link">Services</a></li>
+          <li><a href="#gallery" class="navbar__link">Gallery</a></li>
+          <li><a href="#team" class="navbar__link">Team</a></li>
+          <li><a href="#testimonials" class="navbar__link">Reviews</a></li>
+          <li><a href="#contact" class="navbar__link">Contact</a></li>
+        </ul>
+      </nav>
+      
+      <button class="navbar__toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle navigation menu">
+        ☰
+      </button>
+    </div>
+  </header>
+  
+  <nav id="mobile-menu" class="mobile-menu" aria-hidden="true" aria-label="Mobile Navigation">
+    <a href="#services" class="mobile-menu__link">Services</a>
+    <a href="#gallery" class="mobile-menu__link">Gallery</a>
+    <a href="#team" class="mobile-menu__link">Team</a>
+    <a href="#testimonials" class="mobile-menu__link">Reviews</a>
+    <a href="#contact" class="mobile-menu__link">Contact</a>
+    <a href="#booking" class="mobile-menu__link mobile-menu__link--primary">Book Now</a>
+  </nav>
+
+  <div class="subnav">
+    <div class="subnav__container">
+      <span class="subnav__title">Salon</span>
+      <div class="subnav__actions">
+        <a href="#booking" class="btn btn--primary btn--small">Book</a>
+      </div>
+    </div>
+  </div>
+
+  <main id="main-content" role="main">
+    
+    <section id="home" class="hero section--full" aria-labelledby="hero-heading">
+      <div class="hero__bg">
+        <img src="Main.png" alt="Elegant salon interior with modern styling stations" class="hero__image">
+      </div>
+      <div class="container hero__content">
+        <header class="tile__header align-center">
+          <h1 id="hero-heading" class="text-hero tile__title reveal">Unveil your true elegance.</h1>
+          <p class="text-lead tile__tagline reveal">Expert styling. Absolute precision. Experience beauty redefined.</p>
+          <div class="tile__actions reveal">
+            <a href="#booking" class="btn btn--hero">Book Now</a>
+            <a href="#services" class="btn btn--secondary-light">Learn more</a>
+          </div>
+        </header>
+      </div>
+    </section>
+
+    <section id="services" class="section tile--parchment" aria-labelledby="services-heading">
+      <div class="container">
+        <header class="tile__header align-center reveal">
+          <h2 id="services-heading" class="text-display-lg tile__title">Our Services</h2>
+          <p class="text-lead tile__tagline">Crafted to perfection. Tailored for you.</p>
+        </header>
+        
+        <div class="grid-1-to-4">
+          <article class="card reveal">
+            <div class="card__image-container">
+              <img src="https://images.unsplash.com/photo-1600948836101-f9ffda59d250?auto=format&fit=crop&w=300&q=80" alt="Haircut and Styling" class="card__image" loading="lazy">
+            </div>
+            <h3 class="card__title text-body-strong">Signature Cut</h3>
+            <p class="card__price">$80.00</p>
+            <p class="card__desc">Precision cutting tailored to your facial structure and lifestyle.</p>
+            <a href="#booking" class="btn btn--secondary btn--small">Book</a>
+          </article>
+          
+          <article class="card reveal">
+            <div class="card__image-container">
+              <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=300&q=80" alt="Hair Coloring" class="card__image" loading="lazy">
+            </div>
+            <h3 class="card__title text-body-strong">Color Transformation</h3>
+            <p class="card__price">$150.00</p>
+            <p class="card__desc">Balayage, highlights, or full color utilizing premium products.</p>
+            <a href="#booking" class="btn btn--secondary btn--small">Book</a>
+          </article>
+          
+          <article class="card reveal">
+            <div class="card__image-container">
+              <img src="https://images.unsplash.com/photo-1596178065887-1198b6148b2b?auto=format&fit=crop&w=300&q=80" alt="Facial Treatment" class="card__image" loading="lazy">
+            </div>
+            <h3 class="card__title text-body-strong">Luxury Facial</h3>
+            <p class="card__price">$120.00</p>
+            <p class="card__desc">Rejuvenating skin treatments customized for your skin type.</p>
+            <a href="#booking" class="btn btn--secondary btn--small">Book</a>
+          </article>
+
+          <article class="card reveal">
+            <div class="card__image-container">
+              <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=300&q=80" alt="Spa Manicure" class="card__image" loading="lazy">
+            </div>
+            <h3 class="card__title text-body-strong">Spa Manicure</h3>
+            <p class="card__price">$45.00</p>
+            <p class="card__desc">Complete nail care with massage and premium polish finish.</p>
+            <a href="#booking" class="btn btn--secondary btn--small">Book</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="section tile--dark" aria-labelledby="gallery-heading">
+      <div class="container">
+        <header class="tile__header align-center reveal">
+          <h2 id="gallery-heading" class="text-display-lg tile__title">Portfolio</h2>
+          <p class="text-lead tile__tagline">Masterpieces created daily.</p>
+        </header>
+        
+        <div class="gallery-grid">
+          <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=600&q=80" alt="Blonde balayage styling" class="gallery__item reveal" tabindex="0" loading="lazy">
+          <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=600&q=80" alt="Elegant updo hairstyle" class="gallery__item reveal" tabindex="0" loading="lazy">
+          <img src="https://images.unsplash.com/photo-1600948836101-f9ffda59d250?auto=format&fit=crop&w=600&q=80" alt="Precision bob haircut" class="gallery__item reveal" tabindex="0" loading="lazy">
+          <img src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?auto=format&fit=crop&w=600&q=80" alt="Men's classic fade" class="gallery__item reveal" tabindex="0" loading="lazy">
+          <img src="https://images.unsplash.com/photo-1596178065887-1198b6148b2b?auto=format&fit=crop&w=600&q=80" alt="Bridal makeup and hair" class="gallery__item reveal" tabindex="0" loading="lazy">
+          <img src="https://images.unsplash.com/photo-1620331311520-246422fd82f9?auto=format&fit=crop&w=600&q=80" alt="Creative color treatment" class="gallery__item reveal" tabindex="0" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <div id="gallery-lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Image gallery fullscreen view">
+      <button class="lightbox__close" aria-label="Close lightbox">✕</button>
+      <button class="lightbox__prev" aria-label="Previous image">❮</button>
+      <div class="lightbox__content">
+        <img src="" alt="" class="lightbox__image">
+      </div>
+      <button class="lightbox__next" aria-label="Next image">❯</button>
+    </div>
+
+    <section id="team" class="section tile--light" aria-labelledby="team-heading">
+      <div class="container">
+        <header class="tile__header align-center reveal">
+          <h2 id="team-heading" class="text-display-lg tile__title">Our Artists</h2>
+          <p class="text-lead tile__tagline">The minds behind the magic.</p>
+        </header>
+        
+        <div class="grid-1-to-4">
+          <article class="team-card reveal">
+            <img src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?auto=format&fit=crop&w=400&q=80" alt="Portrait of Sarah, Master Stylist" class="team-card__image" loading="lazy">
+            <h3 class="team-card__name text-body-strong">Sarah Jenkins</h3>
+            <p class="team-card__role">Master Stylist</p>
+            <p class="team-card__specialties">Specialties: Balayage, Precision Cuts</p>
+          </article>
+          
+          <article class="team-card reveal">
+            <img src="https://images.unsplash.com/photo-1595959183082-7b570b7e08e2?auto=format&fit=crop&w=400&q=80" alt="Portrait of Marcus, Color Specialist" class="team-card__image" loading="lazy">
+            <h3 class="team-card__name text-body-strong">Marcus Chen</h3>
+            <p class="team-card__role">Color Specialist</p>
+            <p class="team-card__specialties">Specialties: Color Correction, Vivids</p>
+          </article>
+          
+          <article class="team-card reveal">
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80" alt="Portrait of Elena, Esthetician" class="team-card__image" loading="lazy">
+            <h3 class="team-card__name text-body-strong">Elena Rossi</h3>
+            <p class="team-card__role">Lead Esthetician</p>
+            <p class="team-card__specialties">Specialties: Anti-aging, Brows</p>
+          </article>
+          
+          <article class="team-card reveal">
+            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=400&q=80" alt="Portrait of David, Barber" class="team-card__image" loading="lazy">
+            <h3 class="team-card__name text-body-strong">David Miller</h3>
+            <p class="team-card__role">Senior Barber</p>
+            <p class="team-card__specialties">Specialties: Fades, Beard Grooming</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="section tile--parchment" aria-labelledby="testimonials-heading">
+      <div class="container">
+        <header class="tile__header align-center reveal">
+          <h2 id="testimonials-heading" class="text-display-lg tile__title">Client Stories</h2>
+        </header>
+        
+        <div class="carousel reveal">
+          <div class="carousel__track">
+            <div class="carousel__slide">
+              <p class="carousel__quote">"Absolutely transformed my hair. The attention to detail is unmatched."</p>
+              <p class="carousel__author">— Amanda R.</p>
+            </div>
+            <div class="carousel__slide">
+              <p class="carousel__quote">"An experience in pure luxury. The facial left my skin glowing for days."</p>
+              <p class="carousel__author">— Jessica T.</p>
+            </div>
+            <div class="carousel__slide">
+              <p class="carousel__quote">"The only place I trust for my color. Masterful work every single time."</p>
+              <p class="carousel__author">— Michael B.</p>
+            </div>
+          </div>
+          <div class="carousel__controls">
+            <button id="carousel-prev" class="btn btn--icon" aria-label="Previous testimonial">❮</button>
+            <button id="carousel-next" class="btn btn--icon" aria-label="Next testimonial">❯</button>
+          </div>
+          <div class="carousel__dots">
+            <button class="carousel__dot is-active" aria-label="Slide 1"></button>
+            <button class="carousel__dot" aria-label="Slide 2"></button>
+            <button class="carousel__dot" aria-label="Slide 3"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="booking" class="section tile--light" aria-labelledby="booking-heading">
+      <div class="container">
+        <header class="tile__header align-center reveal">
+          <h2 id="booking-heading" class="text-display-lg tile__title">Reserve Your Time</h2>
+          <p class="text-lead tile__tagline">Step into your best self.</p>
+        </header>
+        
+        <form id="booking-form" class="booking-form reveal" novalidate>
+          <div class="wizard-progress">
+            <span class="wizard-step-indicator is-active">1. Service</span>
+            <span class="wizard-step-indicator">2. Date & Time</span>
+            <span class="wizard-step-indicator">3. Details</span>
+          </div>
+
+          <!-- Step 1 -->
+          <div class="wizard-step is-active" data-step="1">
+            <div class="form__group">
+              <label for="service" class="form__label">Select Service</label>
+              <select id="service" class="form__select" required aria-required="true">
+                <option value="">Choose a service...</option>
+                <option value="cut">Signature Cut</option>
+                <option value="color">Color Transformation</option>
+                <option value="facial">Luxury Facial</option>
+                <option value="nails">Spa Manicure</option>
+              </select>
+              <span class="form__error-message">Please select a service.</span>
+            </div>
+            <div class="wizard-actions">
+              <div></div>
+              <button type="button" class="btn btn--primary btn-next">Next</button>
+            </div>
+          </div>
+          
+          <!-- Step 2 -->
+          <div class="wizard-step" data-step="2">
+            <div class="form__group">
+              <label for="date" class="form__label">Select Date</label>
+              <input type="date" id="date" class="form__input" required aria-required="true">
+              <span class="form__error-message">Please select a valid date.</span>
+            </div>
+            <div class="form__group">
+              <label for="time" class="form__label">Select Time</label>
+              <input type="time" id="time" class="form__input" required aria-required="true">
+              <span class="form__error-message">Please select a time.</span>
+            </div>
+            <div class="wizard-actions">
+              <button type="button" class="btn btn--secondary btn-prev">Previous</button>
+              <button type="button" class="btn btn--primary btn-next">Next</button>
+            </div>
+          </div>
+          
+          <!-- Step 3 -->
+          <div class="wizard-step" data-step="3">
+            <div class="form__group">
+              <label for="name" class="form__label">Full Name</label>
+              <input type="text" id="name" class="form__input" placeholder="Jane Doe" required aria-required="true">
+              <span class="form__error-message">Please enter your full name.</span>
+            </div>
+            <div class="form__group">
+              <label for="email" class="form__label">Email Address</label>
+              <input type="email" id="email" class="form__input" placeholder="jane@example.com" required aria-required="true">
+              <span class="form__error-message">Please enter a valid email address.</span>
+            </div>
+            <div class="wizard-actions">
+              <button type="button" class="btn btn--secondary btn-prev">Previous</button>
+              <button type="submit" class="btn btn--primary">Confirm Appointment</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section id="contact" class="section tile--dark" aria-labelledby="contact-heading">
+      <div class="container">
+        <header class="tile__header align-center reveal">
+          <h2 id="contact-heading" class="text-display-lg tile__title">Get in Touch</h2>
+          <p class="text-lead tile__tagline">We look forward to welcoming you.</p>
+        </header>
+        <div class="grid-1-to-2 reveal">
+          <div>
+            <h3 class="text-body-strong">Location</h3>
+            <p>123 Elegance Ave<br>New York, NY 10001</p>
+            <p class="mt-md"><strong>Phone:</strong> +1 (234) 567-890</p>
+            <p><strong>Email:</strong> hello@femina.com</p>
+          </div>
+          <div>
+            <h3 class="text-body-strong">Hours of Operation</h3>
+            <p><strong>Monday - Friday:</strong> 9:00 AM - 8:00 PM</p>
+            <p><strong>Saturday:</strong> 10:00 AM - 6:00 PM</p>
+            <p><strong>Sunday:</strong> Closed</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer tile--parchment" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <h4 class="footer__heading">Services</h4>
+          <ul class="footer__list">
+            <li><a href="#" class="footer__link">Haircut & Styling</a></li>
+            <li><a href="#" class="footer__link">Color & Highlights</a></li>
+            <li><a href="#" class="footer__link">Skin Treatments</a></li>
+            <li><a href="#" class="footer__link">Nail Care</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__heading">About</h4>
+          <ul class="footer__list">
+            <li><a href="#" class="footer__link">Our Story</a></li>
+            <li><a href="#" class="footer__link">Meet the Team</a></li>
+            <li><a href="#" class="footer__link">Careers</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__heading">Contact</h4>
+          <ul class="footer__list">
+            <li><a href="#" class="footer__link">123 Elegance Ave, NY</a></li>
+            <li><a href="#" class="footer__link">+1 (234) 567-890</a></li>
+            <li><a href="#" class="footer__link">hello@femina.com</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__heading">Hours</h4>
+          <ul class="footer__list">
+            <li><span class="footer__link">Mon-Fri: 9am - 8pm</span></li>
+            <li><span class="footer__link">Sat: 10am - 6pm</span></li>
+            <li><span class="footer__link">Sun: Closed</span></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer__legal">
+        <p>&copy; 2026 Femina Salon. All rights reserved.</p>
+        <p>
+          <a href="#" class="footer__link--underline">Privacy Policy</a> | 
+          <a href="#" class="footer__link--underline">Terms of Service</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <button id="back-to-top" class="back-to-top" aria-label="Scroll back to top">↑</button>
+
+</body>
+</html>
